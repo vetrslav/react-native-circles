@@ -1,0 +1,50 @@
+{
+  "name": "react-native-circles",
+  "version": "1.0.0",
+  "description": "React Native multi progress ring and arc component",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vetrslav/react-native-circles.git"
+  },
+  "keywords": [
+    "React Native",
+    "Circle",
+    "Circles",
+    "Svg",
+    "Progress",
+    "multi",
+    "arc",
+    "chart",
+    "arcs",
+    "pie",
+    "sector",
+    "progress"
+  ],
+  "author": {
+    "name": "Sviataslau Vetrau",
+    "email": "vetrlav@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vetrslav/react-native-circles/issues"
+  },
+  "homepage": "https://github.com/vetrslav/react-native-circles#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "typescript": "^3.5.3",
+    "@types/react": "^16.8.23",
+    "@types/react-native": "^0.60.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-native-svg": "^9.5.3",
+    "react-native": "^0.60.3"
+  },
+  "peerDependencies": {
+    "react": ">=15.0.0",
+    "react-native": "*"
+  }
+}
