@@ -70,7 +70,7 @@ const MultiArcCircle = ({
       = getPointsByDescriptor(angles, center, internalRadius);
 
     return angles.end - angles.start <= 180 ?
-      <Path d={`M ${startPoint.x} ${startPoint.y} 
+      <Path key={`${angles.start}.${angles.end}`} d={`M ${startPoint.x} ${startPoint.y} 
         A ${radius} ${radius} , 0, 0, 1, ${endPoint.x} ${endPoint.y}
         A ${EDGE_RADIUS} ${EDGE_RADIUS} , 0, 0, 1, ${endPointInternal.x} ${endPointInternal.y}
         A ${internalRadius} ${internalRadius} , 0, 0, 0, ${startPointInternal.x} ${startPointInternal.y}
@@ -79,7 +79,7 @@ const MultiArcCircle = ({
         fill={color}
       />
       :
-      <Path d={`M ${startPoint.x} ${startPoint.y} 
+      <Path key={`${angles.start}.${angles.end}`} d={`M ${startPoint.x} ${startPoint.y} 
         A ${radius} ${radius} , 0, 0, 1, ${middlePoint && middlePoint.x} ${middlePoint && middlePoint.y}
         A ${radius} ${radius} , 0, 0, 1, ${endPoint.x} ${endPoint.y}
         A ${EDGE_RADIUS} ${EDGE_RADIUS} , 0, 0, 1, ${endPointInternal.x} ${endPointInternal.y}
