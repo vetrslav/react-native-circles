@@ -46,3 +46,13 @@ export default class CircleExample extends React.Component {
   }
 }
 ```
+
+### Common props:
+
+Name            | Description  
+----------------|-----------------------------
+width           | width of the ring    
+radius          | radius of the ring   
+color           | color for arcs that are described by intervals props    
+backgroundColor | color of the ring     
+intervals       | Array of objects({ start: angle, end: angle }) that describe arcs
